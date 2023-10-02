@@ -9,4 +9,7 @@ import Foundation
 
 class SignupFormModelValidator {
     
+    func isFirstNameValid(firstName: String) {
+        
+    }
 }

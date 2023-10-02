@@ -24,10 +24,10 @@ final class SignupFormModelValidatorTests: XCTestCase {
         let sut = SignupFormModelValidator()
         
         // Act
-        sut.isFirstNameValid(firstName: "Damir")
+        let isFirstNameValid = sut.isFirstNameValid(firstName: "Damir")
         
         // Assert
-        
+        XCTAssertTrue(isFirstNameValid, "The isFirstNameValid() should have returned TRUE for a valid first name but returned FALSE.")
     }
 
 }

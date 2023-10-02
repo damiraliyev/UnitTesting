@@ -13,7 +13,7 @@
 		684A2D5F2ACA7F06005EFAFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A2D5D2ACA7F06005EFAFE /* Main.storyboard */; };
 		684A2D612ACA7F07005EFAFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684A2D602ACA7F07005EFAFE /* Assets.xcassets */; };
 		684A2D642ACA7F07005EFAFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A2D622ACA7F07005EFAFE /* LaunchScreen.storyboard */; };
-		684A2D792ACA802E005EFAFE /* SignupFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684A2D782ACA802E005EFAFE /* SignupFormModelValidator.swift */; };
+		684A2D792ACA802E005EFAFE /* SignupFormModelValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684A2D782ACA802E005EFAFE /* SignupFormModelValidatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,7 @@
 		684A2D632ACA7F07005EFAFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		684A2D652ACA7F07005EFAFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		684A2D6F2ACA7F2D005EFAFE /* PhotoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		684A2D782ACA802E005EFAFE /* SignupFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidator.swift; sourceTree = "<group>"; };
+		684A2D782ACA802E005EFAFE /* SignupFormModelValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 		684A2D702ACA7F2E005EFAFE /* PhotoAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				684A2D782ACA802E005EFAFE /* SignupFormModelValidator.swift */,
+				684A2D782ACA802E005EFAFE /* SignupFormModelValidatorTests.swift */,
 			);
 			path = PhotoAppTests;
 			sourceTree = "<group>";
@@ -209,7 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				684A2D792ACA802E005EFAFE /* SignupFormModelValidator.swift in Sources */,
+				684A2D792ACA802E005EFAFE /* SignupFormModelValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

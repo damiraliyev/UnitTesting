@@ -47,7 +47,7 @@ final class SignupFormModelValidatorTests: XCTestCase {
         // Arrange
         
         // Act
-        let isFirstNameIsValid = sut.isFirstNameValid(firstName: "1234567891011")
+        let isFirstNameIsValid = sut.isFirstNameValid(firstName: "12345678912")
         
         // Assert
         XCTAssertFalse(isFirstNameIsValid, "The isFirstNameValid() should have returned FALSE for a first name that longer than 10 characters but returned TRUE.")

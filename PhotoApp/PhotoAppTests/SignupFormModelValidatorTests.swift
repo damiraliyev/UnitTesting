@@ -24,6 +24,7 @@ final class SignupFormModelValidatorTests: XCTestCase {
         let sut = SignupFormModelValidator()
         
         // Act
+        sut.isFirstNameValid(firstName: "Damir")
         
         // Assert
         

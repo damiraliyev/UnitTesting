@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import PhotoApp
 
 final class SignupFormModelValidatorTests: XCTestCase {
 
@@ -14,10 +15,17 @@ final class SignupFormModelValidatorTests: XCTestCase {
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        // Put teardown code here. This method is called after the invocation of each test method in the class.s
     }
     
     func testSignupFormModelValidator_WhenValidFirstNameProvided_ShouldReturnTrue() {
+        
+        // Arrange
+        let sut = SignupFormModelValidator()
+        
+        // Act
+        
+        // Assert
         
     }
 

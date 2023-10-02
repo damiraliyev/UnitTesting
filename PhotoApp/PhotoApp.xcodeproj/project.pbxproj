@@ -13,7 +13,7 @@
 		684A2D5F2ACA7F06005EFAFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A2D5D2ACA7F06005EFAFE /* Main.storyboard */; };
 		684A2D612ACA7F07005EFAFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684A2D602ACA7F07005EFAFE /* Assets.xcassets */; };
 		684A2D642ACA7F07005EFAFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A2D622ACA7F07005EFAFE /* LaunchScreen.storyboard */; };
-		684A2D722ACA7F2E005EFAFE /* PhotoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684A2D712ACA7F2E005EFAFE /* PhotoAppTests.swift */; };
+		684A2D792ACA802E005EFAFE /* SignupFormModelValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684A2D782ACA802E005EFAFE /* SignupFormModelValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,7 @@
 		684A2D632ACA7F07005EFAFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		684A2D652ACA7F07005EFAFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		684A2D6F2ACA7F2D005EFAFE /* PhotoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		684A2D712ACA7F2E005EFAFE /* PhotoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAppTests.swift; sourceTree = "<group>"; };
+		684A2D782ACA802E005EFAFE /* SignupFormModelValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupFormModelValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 		684A2D702ACA7F2E005EFAFE /* PhotoAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				684A2D712ACA7F2E005EFAFE /* PhotoAppTests.swift */,
+				684A2D782ACA802E005EFAFE /* SignupFormModelValidator.swift */,
 			);
 			path = PhotoAppTests;
 			sourceTree = "<group>";
@@ -150,6 +150,7 @@
 					};
 					684A2D6E2ACA7F2D005EFAFE = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 						TestTargetID = 684A2D532ACA7F06005EFAFE;
 					};
 				};
@@ -208,7 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				684A2D722ACA7F2E005EFAFE /* PhotoAppTests.swift in Sources */,
+				684A2D792ACA802E005EFAFE /* SignupFormModelValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,14 +417,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3F7BDN63CA;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.damiraliyev.PhotoAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PhotoApp";
@@ -434,10 +442,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3F7BDN63CA;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.damiraliyev.PhotoAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,5 +1,5 @@
 //
-//  PhotoAppTests.swift
+//  SignupFormModelValidator.swift
 //  PhotoAppTests
 //
 //  Created by Damir Aliyev on 02.10.2023.
@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class PhotoAppTests: XCTestCase {
+final class SignupFormModelValidator: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -27,7 +27,7 @@ final class PhotoAppTests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        measure {
+        self.measure {
             // Put the code you want to measure the time of here.
         }
     }

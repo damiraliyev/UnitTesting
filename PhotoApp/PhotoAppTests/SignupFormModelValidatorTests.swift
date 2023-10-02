@@ -9,19 +9,20 @@ import XCTest
 @testable import PhotoApp
 
 final class SignupFormModelValidatorTests: XCTestCase {
+    
+    var sut: SignupFormModelValidator!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        sut = SignupFormModelValidator()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.s
+        sut = nil
     }
     
     func testSignupFormModelValidator_WhenValidFirstNameProvided_ShouldReturnTrue() {
         
         // Arrange
-        let sut = SignupFormModelValidator()
         
         // Act
         let isFirstNameValid = sut.isFirstNameValid(firstName: "Damir")
@@ -33,7 +34,6 @@ final class SignupFormModelValidatorTests: XCTestCase {
     func testSignupFormModelValidator_WhenTooShortFirstNameProvided_ShouldReturnFalse() {
         
         // Arrange
-        let sut = SignupFormModelValidator()
         
         // Act
         let isFirstNameIsValid = sut.isFirstNameValid(firstName: "D")
